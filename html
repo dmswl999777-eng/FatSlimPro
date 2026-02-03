@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hyLabs | HY7601 & KY1032 - Scientific Weight Management</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .gradient-bg { background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); }
+        .accent-blue { color: #004691; }
+        .bg-accent-blue { background-color: #004691; }
+        .stat-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .stat-card:hover { transform: translateY(-8px); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1); }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-up { animation: fadeIn 0.8s ease-out forwards; }
+    </style>
+</head>
+<body class="text-slate-900 leading-relaxed bg-white">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-white/95 backdrop-blur-md z-50 border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <img src="https://www.hylabs.co.kr/resources/images/common/logo.png" alt="hyLabs" class="h-8 md:h-10" onerror="this.src='https://via.placeholder.com/150x50?text=hyLabs'">
+            <div class="hidden md:flex space-x-8 text-sm font-bold uppercase tracking-widest">
+                <a href="#science" class="hover:text-blue-600 transition">Science</a>
+                <a href="#publications" class="hover:text-blue-600 transition">Publications</a>
+                <a href="#reviews" class="hover:text-blue-600 transition">Reviews</a>
+                <a href="#fredit" class="bg-accent-blue text-white px-5 py-2 rounded-full hover:bg-blue-800 transition">Product</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="science" class="gradient-bg pt-16 pb-24 px-6 border-b border-slate-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-16 items-center mb-20">
+                <div class="animate-up">
+                    <span class="inline-block px-4 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-bold mb-6 uppercase tracking-widest">Global Partnership Solution</span>
+                    <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-[1.1]">
+                        Science of <br><span class="accent-blue italic">Weight Control</span>
+                    </h1>
+                    <p class="text-xl text-slate-600 mb-10 leading-relaxed max-w-lg">
+                        <strong>HY7601 & KY1032</strong>: Korea's pioneering dual-strain probiotic, KFDA-certified for significant body fat reduction.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-white px-4 py-2 rounded-lg shadow-sm border border-slate-200 text-xs font-bold text-slate-500">#BodyFatReduction</span>
+                        <span class="bg-white px-4 py-2 rounded-lg shadow-sm border border-slate-200 text-xs font-bold text-slate-500">#KFDA_Certified</span>
+                        <span class="bg-white px-4 py-2 rounded-lg shadow-sm border border-slate-200 text-xs font-bold text-slate-500">#Scientific_Duo</span>
+                    </div>
+                </div>
+                <div class="relative flex justify-center animate-up" style="animation-delay: 0.2s;">
+                    <img src="https://img.fredit.co.kr/upload/product/20230327/20230327142750625.jpg" alt="MPRO Diet FatSlim" class="rounded-3xl shadow-2xl w-full max-w-md transform transition hover:scale-105 duration-700">
+                    <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-2xl border border-slate-100 hidden lg:block">
+                        <p class="text-3xl font-black accent-blue leading-none">12-Week</p>
+                        <p class="text-[10px] text-slate-400 font-bold uppercase mt-2 tracking-widest">Clinical Success Rate</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHOTO INSERTION SECTION -->
+            <div class="max-w-5xl mx-auto mb-16 animate-up" style="animation-delay: 0.3s;">
+                <div class="bg-white rounded-[2.5rem] p-4 shadow-2xl border border-slate-100 overflow-hidden">
+                    <!-- 아래 'images/내사진이름.png' 부분을 업로드한 사진의 실제 파일명으로 바꾸세요 -->
+                    <img src="images/내사진이름.png" alt="Clinical Results and Analysis" class="w-full h-auto rounded-2xl" onerror="this.src='https://via.placeholder.com/1200x600/f1f5f9/64748b?text=Upload+Your+Result+Image+to+images+folder'">
+                </div>
+                <p class="text-center text-slate-400 text-[10px] mt-6 font-bold uppercase tracking-[0.3em]">Scientific Analysis & Clinical Evidence Visualized</p>
+            </div>
+
+            <!-- KEY PERFORMANCE METRICS -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 animate-up" style="animation-delay: 0.4s;">
+                <!-- Box 1 -->
+                <div class="stat-card bg-white p-10 rounded-3xl shadow-xl border-t-8 border-blue-600 text-center relative overflow-hidden">
+                    <div class="text-blue-600 mb-6 flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.040L3 14.535a11.996 11.996 0 0011.062 11.062l1.01-.132a11.996 11.996 0 0011.062-11.062l-.382-8.551z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 uppercase tracking-tight">Clinically Proven</h3>
+                    <p class="text-slate-500 text-sm font-semibold uppercase tracking-widest">Double-Blind Human Trial</p>
+                </div>
+
+                <!-- Box 2 -->
+                <div class="stat-card bg-white p-10 rounded-3xl shadow-xl border-t-8 border-blue-600 text-center">
+                    <div class="text-blue-600 text-6xl font-black mb-4 tracking-tighter">-1.4kg</div>
+                    <h3 class="text-2xl font-bold mb-2 uppercase tracking-tight">Weight Loss</h3>
+                    <p class="text-slate-500 text-sm font-semibold uppercase tracking-widest leading-tight">Superiority over Placebo<br>(12-Week Study)</p>
+                </div>
+
+                <!-- Box 3 -->
+                <div class="stat-card bg-white p-10 rounded-3xl shadow-xl border-t-8 border-blue-600 text-center">
+                    <div class="text-blue-600 mb-6 flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 uppercase tracking-tight">Hormone Regulation</h3>
+                    <p class="text-slate-500 text-sm font-semibold uppercase tracking-widest italic">Leptin & Adiponectin Control</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scientific Publications Section -->
+    <section id="publications" class="py-24 bg-white px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-extrabold mb-6 tracking-tight italic">Scientific Publications</h2>
+                <div class="h-1.5 w-24 bg-blue-600 mx-auto mb-8 rounded-full"></div>
+                <p class="text-slate-500 italic max-w-2xl mx-auto text-lg leading-relaxed">Evidence-based excellence. Peer-reviewed studies confirming the efficacy and safety of our dual-strain complex.</p>
+            </div>
+            
+            <div class="grid gap-8">
+                <!-- Publication 1: MDPI Nutrients 2022 -->
+                <div class="group p-10 border border-slate-100 bg-slate-50 rounded-3xl transition-all duration-300 hover:bg-white hover:shadow-2xl hover:border-blue-200">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="px-4 py-1 bg-blue-600 text-white text-[10px] font-black rounded uppercase tracking-widest">Clinical</span>
+                        <span class="text-slate-400 font-mono text-xs font-bold tracking-widest">DOI: 10.3390/nu14122484</span>
+                    </div>
+                    <a href="https://www.mdpi.com/2072-6643/14/12/2484" target="_blank" class="block">
+                        <h3 class="text-2xl font-bold mb-4 group-hover:text-blue-700 transition">Effects of Lactobacillus curvatus HY7601 and Lactobacillus plantarum KY1032 on Body Fat</h3>
+                    </a>
+                    <p class="text-slate-600 mb-6 leading-relaxed italic border-l-4 border-slate-200 pl-6">"Our randomized, double-blind, placebo-controlled trial demonstrated significant reductions in body fat, BMI, and lipid profiles over a 12-week period."</p>
+                    <div class="text-sm text-slate-400 font-bold uppercase tracking-wider">Nutrients (2022)</div>
+                </div>
+
+                <!-- Publication 2: MDPI Nutrients 2024 -->
+                <div class="group p-10 border border-slate-100 bg-slate-50 rounded-3xl transition-all duration-300 hover:bg-white hover:shadow-2xl hover:border-blue-200">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="px-4 py-1 bg-green-600 text-white text-[10px] font-black rounded uppercase tracking-widest">Mechanism Study</span>
+                        <span class="text-slate-400 font-mono text-xs font-bold tracking-widest">DOI: 10.3390/nu16152570</span>
+                    </div>
+                    <a href="https://www.mdpi.com/2072-6643/16/15/2570" target="_blank" class="block">
+                        <h3 class="text-2xl font-bold mb-4 group-hover:text-blue-700 transition">Regulates energy metabolism and improves cholesterol disposal</h3>
+                    </a>
+                    <p class="text-slate-600 mb-6 leading-relaxed italic border-l-4 border-slate-200 pl-6">"This study explores how the probiotic combination modulates energy pathways and enhances the body's natural ability to dispose of cholesterol."</p>
+                    <div class="text-sm text-slate-400 font-bold uppercase tracking-wider">Nutrients (2024)</div>
+                </div>
+
+                <!-- Publication 3: J Med Food 2018 -->
+                <div class="group p-10 border border-slate-100 bg-slate-50 rounded-3xl transition-all duration-300 hover:bg-white hover:shadow-2xl hover:border-blue-200">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="px-4 py-1 bg-purple-600 text-white text-[10px] font-black rounded uppercase tracking-widest">Synergy Study</span>
+                        <span class="text-slate-400 font-mono text-xs font-bold tracking-widest">DOI: 10.1089/jmf.2017.4157</span>
+                    </div>
+                    <a href="https://www.liebertpub.com/doi/abs/10.1089/jmf.2017.4157" target="_blank" class="block">
+                        <h3 class="text-2xl font-bold mb-4 group-hover:text-blue-700 transition">Synergistic effect of HY7601 and KY1032: Body fat reduction</h3>
+                    </a>
+                    <p class="text-slate-600 mb-6 leading-relaxed italic border-l-4 border-slate-200 pl-6">"Analysis of the combined administration of HY7601 and KY1032 shows superior weight management effects compared to individual strain use."</p>
+                    <div class="text-sm text-slate-400 font-bold uppercase tracking-wider">Journal of Medicinal Food (2018)</div>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <a href="mailto:global@hy.co.kr" class="inline-block text-blue-600 font-black border-b-2 border-blue-200 hover:border-blue-600 transition pb-2 uppercase tracking-widest text-sm">Download Full Technical Dossier</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Voice (What Korea is Saying) -->
+    <section id="reviews" class="py-24 bg-slate-950 text-white px-6 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl -mr-48 -mt-48"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-blue-900/10 rounded-full blur-3xl -ml-48 -mb-48"></div>
+
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-black mb-6 tracking-tight">What Korea is Saying</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">Real voices from Fredit, Korea's premier wellness platform with over 92,000+ verified customer reviews.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-white/5 p-10 rounded-[2.5rem] border border-white/10 backdrop-blur-xl hover:bg-white/10 transition duration-500">
+                    <div class="flex text-yellow-400 mb-8 space-x-1 font-bold text-xl">★★★★★</div>
+                    <h4 class="text-2xl font-bold mb-4">"Visible Results"</h4>
+                    <p class="text-slate-400 italic leading-relaxed text-lg">"After trying numerous supplements, FatSlim is the first one that felt natural and effective. My body feels lighter, and my digestion has never been better."</p>
+                    <div class="mt-10 flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-800 flex items-center justify-center font-black text-xl shadow-lg">K</div>
+                        <div>
+                            <p class="text-xs font-black uppercase tracking-widest text-white">Verified Buyer</p>
+                            <p class="text-[10px] text-slate-500 font-bold uppercase tracking-tighter mt-1">SEOUL, KR</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white/5 p-10 rounded-[2.5rem] border border-white/10 backdrop-blur-xl hover:bg-white/10 transition duration-500">
+                    <div class="flex text-yellow-400 mb-8 space-x-1 font-bold text-xl">★★★★★</div>
+                    <h4 class="text-2xl font-bold mb-4">"Scientific Trust"</h4>
+                    <p class="text-slate-400 italic leading-relaxed text-lg">"I chose this because of the KFDA certification. It's refreshing to have a weight management tool backed by real clinical data. Already on my 3rd month."</p>
+                    <div class="mt-10 flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-800 flex items-center justify-center font-black text-xl shadow-lg">S</div>
+                        <div>
+                            <p class="text-xs font-black uppercase tracking-widest text-white">Pro Subscriber</p>
+                            <p class="text-[10px] text-slate-500 font-bold uppercase tracking-tighter mt-1">BUSAN, KR</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white/5 p-10 rounded-[2.5rem] border border-white/10 backdrop-blur-xl hover:bg-white/10 transition duration-500">
+                    <div class="flex text-yellow-400 mb-8 space-x-1 font-bold text-xl">★★★★★</div>
+                    <h4 class="text-2xl font-bold mb-4">"Daily Essential"</h4>
+                    <p class="text-slate-400 italic leading-relaxed text-lg">"Simple and powerful. It fits perfectly into my morning routine. Knowing it regulates metabolic hormones gives me immense confidence in the product."</p>
+                    <div class="mt-10 flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-800 flex items-center justify-center font-black text-xl shadow-lg">M</div>
+                        <div>
+                            <p class="text-xs font-black uppercase tracking-widest text-white">Wellness Coach</p>
+                            <p class="text-[10px] text-slate-500 font-bold uppercase tracking-tighter mt-1">INCHEON, KR</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section (Fredit Link) -->
+    <section id="fredit" class="py-32 bg-white px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-5xl font-black mb-8 tracking-tight">Ready for Global Success?</h2>
+            <p class="text-slate-600 mb-14 text-xl max-w-2xl mx-auto leading-relaxed">
+                Discover <strong>'MPRO Diet FatSlim'</strong>, the benchmark product of hyLabs technology. See the full product details and consumer engagement live on our official mall.
+            </p>
+            
+            <a href="https://m.fredit.co.kr/product/detail?prdId=39029" target="_blank" class="group inline-flex items-center justify-center px-16 py-7 bg-accent-blue text-white rounded-full text-2xl font-black shadow-[0_25px_60px_-15px_rgba(0,70,145,0.4)] transition-all duration-300 transform hover:-translate-y-2 hover:bg-blue-800">
+                View Product on Fredit
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ml-4 group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </a>
+            
+            <div class="mt-24 pt-12 border-t border-slate-50 flex flex-col md:flex-row justify-center items-center gap-10">
+                <div class="flex items-center opacity-30 grayscale hover:grayscale-0 transition-all cursor-default">
+                    <img src="https://www.fredit.co.kr/resources/images/common/logo.png" alt="Fredit" class="h-8">
+                </div>
+                <div class="text-slate-400 text-sm font-black uppercase tracking-[0.2em] border-l border-slate-200 pl-10 hidden md:block">
+                    Inquiry: ejkim@hy.co.kr
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-slate-50 text-slate-400 text-center text-[10px] font-bold uppercase tracking-widest border-t border-slate-200">
+        <p class="mb-2">© 2026 hy Co., Ltd. All Rights Reserved.</p>
+        <p>Proprietary B2B Presentation Content - Do Not Redistribute Without Permission.</p>
+    </footer>
+
+</body>
+</html>
